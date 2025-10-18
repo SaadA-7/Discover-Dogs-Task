@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: grey;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+.whole-page {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  color: black;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.header h3 {
+  font-size: 24px;
+.main-content {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+}
+
+.main-content {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.ban-list, .history {
+  background-color: teal;
+  padding: 20px;
+  border-radius: 10px;
+  color: black;
+  width: 200px;
+  min-height: 400px;
+  text-align: center;
+}
+
+.ban-list h2, .history h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.ban-list p, .history p {
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #f8f9fa;
+}
+
+.ban-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ban-button {
+  background-color: lightcoral;
+  color: white;
+  border: solid 2px white;
+  padding: 8px 12px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.ban-button:hover {
+  background-color: red;
+  border: solid 2px red;
+}
+
+.dog-display {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: f8f9fa;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.discover-button {
+  background-color: teal;
+  border: solid 2px white;
+  color: white;
+  padding: 15px 40px;
+  font-size: 18px;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.discover-button:hover {
+  background-color: teal;
+  border: solid 2px teal;
+}
+
+.dog-card {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 500px;
+}
+
+.dog-card h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.dog-card > p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.dog-attributes {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.attribute-button {
+  background-color: gold;
+  color: #333;
+  border: solid 2px white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.attribute-button:hover {
+  background-color: gold;
+  border: solid 2px gold;
+}
+
+.dog-image {
+  width: 100%;
+  max-width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.history-images {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.history-image {
+  width: 100%;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.history-image:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 900px) {
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ban-list, .history {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .history-images {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .history-image {
+    width: calc(50% - 5px);
+  }
+}
